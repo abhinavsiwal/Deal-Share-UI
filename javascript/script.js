@@ -1,9 +1,23 @@
+let perViewSlides;
+let x = window.matchMedia("(max-width: 600px)")
+  if (x.matches) { // If media query matches
+    perViewSlides=3;
+  } else {
+    perViewSlides=5;
+  }
+
+
+console.log(perViewSlides);
+
+let loginModal = document.getElementById('loginModal');
+loginModal.style.display="none"
+
 let swiper1= new Swiper(".mySwiper1", {
-    slidesPerView: 5,
+    slidesPerView: perViewSlides,
     spaceBetween: 10,
-    slidesPerGroup: 5,
+    slidesPerGroup: 4,
     loop: true,
-    loopFillGroupWithBlank: true,
+    // loopFillGroupWithBlank: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"

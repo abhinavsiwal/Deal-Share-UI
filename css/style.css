@@ -50,16 +50,56 @@ body {
   margin-left: 2rem;
   cursor: pointer;
 }
+.company_logo {
+  margin-right: auto;
+  margin-left: -1.5rem;
+}
+.location-upper {
+  flex-direction: row;
+  display: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.location-upper img {
+  width: 20px;
+  height: 24px;
+}
+.location-upper-text {
+  margin-left: 10px;
+}
+.location-upper-text-upper {
+  flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.location-upper-text-upper span {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--light);
+}
+.location-upper-text-upper img {
+  width: 10px;
+  height: 6px;
+  margin-left: 4px;
+}
+.location-upper-text-lower span{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--light);
+}
 .nav-content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 .search_ {
   width: 100%;
 }
 .search_ input {
-  width: 70%;
+  width: 20rem;
   height: 32px;
   border-radius: 4px;
 }
@@ -177,6 +217,9 @@ body {
 }
 
 /* -----Drawer----- */
+.drawer {
+  width: 25%;
+}
 .drawer-header {
   display: flex;
   width: 100%;
@@ -239,10 +282,16 @@ body {
 .category-section {
   height: 70px;
   border-bottom: 1px solid grey;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 .swiper {
   width: 100%;
   height: 100%;
+}
+.swiper-wrapper {
+  /* margin: 0 4px; */
 }
 .swiper-slide {
   text-align: center;
@@ -259,19 +308,34 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
+  -ms-flex-align: center; 
   -webkit-align-items: center;
   align-items: center;
 }
 .swiper-button-next {
-  color: var(--green);
+  background-image: url(../assets/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
 }
 .swiper-button-prev {
-  color: var(--green);
+  background-image: url(../assets/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
 .category-slide {
   display: flex;
   align-items: center;
+  margin: 0 2px;
 }
 .category-slide img {
   width: 37px;

@@ -17,24 +17,39 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>Deal Share</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar_">
       <div class="container-fluid">
-        <a
+        <div class="upper-nav">
+
+          <a
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasWithBackdrop"
           aria-controls="offcanvasWithBackdrop"
           ><img src="./assets/list.svg" alt="menu-icon" class="menu-icon me-5"
-        /></a>
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logo1" alt="logo" />
-        </a>
-
+          /></a>
+          <a class="navbar-brand company_logo" href="#">
+            <img src="./assets/logo1" alt="logo" />
+          </a>
+          <span class="location-upper">
+            <img src="./assets/location.svg" alt="location logo" />
+            <div class="location-upper-text">
+              <div class="location-upper-text-upper">
+                <span>Delivery to</span>
+                <img src="./assets/down-arrow.svg" alt="Down arrow" />
+              </div>
+              <div class="location-upper-text-lower">
+                <span>Jaipur 302017</span>
+              </div>
+            </div>
+          </span>
+        </div>
         <div
-          class="container-fluid nav-content justify-content-center"
+          class="nav-content"
           id="navbarSupportedContent"
         >
           <form class="d-flex">
@@ -67,7 +82,7 @@
               </div>
             </div>
           </div>
-          <div class="login">
+          <div class="login" data-bs-toggle="modal" data-bs-target="#loginModal">
             <img src="./assets/person.svg" alt="Person" />
             <span>Login</span>
           </div>
@@ -76,11 +91,10 @@
     </nav>
     <!-- Drawer -->
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas offcanvas-start drawer"
       tabindex="-1"
       id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel"
-      style="width: 25%"
     >
       <div class="offcanvas-header drawer-header">
         <button
@@ -103,7 +117,7 @@
     </div>
     <!-- Categories Swipe -->
     <section class="category-section container-fluid">
-      <div class="container category-container mt-5">
+      <div class="container category-container">
         <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide category-slide">
@@ -132,7 +146,7 @@
             </div>
             <div class="swiper-slide category-slide">
               <img src="./assets/categories/home.jpg" alt="">
-              <span>Home and Kitchen</span>
+              <span>Home & Kitchen</span>
             </div>
             <div class="swiper-slide category-slide">
               <img src="./assets/categories/fashion.jpg" alt="">
@@ -189,7 +203,7 @@
     </section>
     <!-- Products Section -->
     <section class="container fluid">
-      <div class="row container justify-content-center">
+      <div class="row container">
         <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
           <div class="product-card">
             <div class="product-card-img">
