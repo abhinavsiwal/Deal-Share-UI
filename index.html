@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Deal Share</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar_">
+      <div class="container-fluid">
+        <a
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBackdrop"
+          aria-controls="offcanvasWithBackdrop"
+          ><img src="./assets/list.svg" alt="menu-icon" class="menu-icon me-5"
+        /></a>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo1" alt="logo" />
+        </a>
+
+        <div
+          class="container-fluid nav-content justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <form class="d-flex">
+            <div class="input-group search_ me-4">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for Products"
+                aria-label="Search"
+              />
+              <span class="input-group-text input_span">
+                <button class="btn">
+                  <img src="./assets/search.svg" alt="search icon" />
+                </button>
+              </span>
+            </div>
+          </form>
+          <div class="animation_ ms-3 me-4">
+            <span class="animation_span">We are hiring</span>
+          </div>
+          <div class="location me-4">
+            <img src="./assets/location.svg" alt="location logo" />
+            <div class="location-text">
+              <div class="location-text-upper">
+                <span>Delivery to</span>
+                <img src="./assets/down-arrow.svg" alt="Down arrow" />
+              </div>
+              <div class="location-text-lower">
+                <span>Jaipur 302017</span>
+              </div>
+            </div>
+          </div>
+          <div class="login">
+            <img src="./assets/person.svg" alt="Person" />
+            <span>Login</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Drawer -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel"
+      style="width: 25%"
+    >
+      <div class="offcanvas-header drawer-header">
+        <button
+          type="button"
+          class="btn-close text-reset close-icon"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="drawer-header-text">
+          <img src="./assets/person-circle.svg" alt="" />
+          <h4>Hello, Login</h4>
+        </div>
+      </div>
+      <div class="offcanvas-body drawer-body">
+        <div class="drawer-body-div1">
+          <img src="./assets/document.svg" alt="" />
+          <span>Terms and Conditions</span>
+        </div>
+      </div>
+    </div>
+    <!-- Categories Swipe -->
+    <section class="category-section container-fluid">
+      <div class="container category-container mt-5">
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/all.png" alt="">
+              <span>All</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/grocery.jpg" alt="">
+              <span>Grocery</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/snacks.jpg" alt="">
+              <span>Snacks and Drinks</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/fruits.jpg" alt="">
+              <span>Fruits and Veggies</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/personal-care.jpg" alt="">
+              <span>Personal Care</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/cleaning.jpg" alt="">
+              <span>Cleaning</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/home.jpg" alt="">
+              <span>Home and Kitchen</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/fashion.jpg" alt="">
+              <span>Fashion</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/sports.jpg" alt="">
+              <span>Sports</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/appliances.jpg" alt="">
+              <span>Appliances & More</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/dairy.jpg" alt="">
+              <span>Dairy and Frozen</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/stationary.jpg" alt="">
+              <span>Stationary</span>
+            </div>
+            <div class="swiper-slide category-slide">
+              <img src="./assets/categories/other.jpg" alt="">
+              <span>Other Products</span>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel -->
+    <section class="carousel-section container-fluid">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide carousel-slide">
+            <img src="./assets/carousel1.jpg" alt="" style="margin: 0 2px" />
+          </div>
+          <div class="swiper-slide carousel-slide">
+            <img src="./assets/carousel2.jpg" alt="" style="margin: 0 2px" />
+          </div>
+          <div class="swiper-slide carousel-slide">
+            <img src="./assets/carousel3.jpg" alt="" style="margin: 0 2px" />
+          </div>
+          <div class="swiper-slide carousel-slide">
+            <img src="./assets/carousel4.jpg" alt="" style="margin: 0 2px" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Products Section -->
+    <section class="container fluid">
+      <div class="row container justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row container justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row container justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+          <div class="product-card">
+            <div class="product-card-img">
+              <div class="product-badge">
+                <img src="./assets/discount_badge_icon.png" alt="" />
+                <span>27% OFF</span>
+              </div>
+              <img src="./assets/chambal-oil.jpg" alt="" class="product-img" />
+            </div>
+            <div class="product-content">
+              <h4>Chambal Soyabean Oil - 1 ltr</h4>
+              <div class="product-price">
+                <span class="product-price-span1">₹138</span>
+                <span class="product-price-span2">₹190</span>
+                <img src="./assets/no-extra-discount.png" alt="" />
+              </div>
+              <div class="d-grid gap-2 product-buttons mt-2">
+                <button class="btn btn-success product-btn1" type="button">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
