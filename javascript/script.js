@@ -6,11 +6,7 @@ let x = window.matchMedia("(max-width: 600px)")
     perViewSlides=5;
   }
 
-
-console.log(perViewSlides);
-
-let loginModal = document.getElementById('loginModal');
-loginModal.style.display="none"
+  
 
 let swiper1= new Swiper(".mySwiper1", {
     slidesPerView: perViewSlides,
@@ -24,7 +20,7 @@ let swiper1= new Swiper(".mySwiper1", {
     }
   });
 
-  var swiper2 = new Swiper(".mySwiper2", {
+  let swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 30,
     slidesPerView: 1.5,
     centeredSlides: true,

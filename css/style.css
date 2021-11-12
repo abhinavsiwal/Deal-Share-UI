@@ -85,7 +85,7 @@ body {
   height: 6px;
   margin-left: 4px;
 }
-.location-upper-text-lower span{
+.location-upper-text-lower span {
   font-size: 12px;
   font-weight: 400;
   color: var(--light);
@@ -94,6 +94,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 2rem;
 }
 .search_ {
   width: 100%;
@@ -277,7 +278,40 @@ body {
 .drawer-body-div1 span {
   margin-left: 20px;
 }
+/* Login MOdal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10px 100px 40px;
+}
+.logo-container {
+  margin-top: 10px;
+}
 
+.login-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  margin-top: 32px;
+}
+.login-form {
+  width: 350px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.login-btn button{
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px;
+  background-image: linear-gradient(rgb(60, 255, 60) 0%, rgb(0, 173, 0));
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+  height: 50px;
+  font-size: 20px;
+  line-height: 1.2;
+}
 /* -----Category Section----- */
 .category-section {
   height: 70px;
@@ -290,9 +324,9 @@ body {
   width: 100%;
   height: 100%;
 }
-.swiper-wrapper {
-  /* margin: 0 4px; */
-}
+/* .swiper-wrapper {
+  margin: 0 4px;
+} */
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -308,7 +342,7 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center; 
+  -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
 }
@@ -459,10 +493,14 @@ body {
 }
 .product-btn2 {
   border: 1 px solid rgb(90, 163, 19);
-  color: rgb(90, 163, 19);
+
   font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
+}
+.product-btn2 a {
+  text-decoration: none;
+  color: rgb(90, 163, 19);
 }
 .product-btn2:hover {
   background-image: linear-gradient(rgb(60, 255, 60) 0%, rgb(0, 173, 0));
