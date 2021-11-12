@@ -12,10 +12,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <title>Cart</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/product.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
-    <title>Product Description</title>
+    <link rel="stylesheet" href="./css/cart.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -42,7 +43,7 @@
                 <img src="./assets/down-arrow.svg" alt="Down arrow" />
               </div>
               <div class="location-upper-text-lower">
-                <span>110031</span>
+                <span>Jaipur 302017</span>
               </div>
             </div>
           </span>
@@ -166,81 +167,119 @@
         </div>
       </div>
     </div>
-    <!-- Product Details -->
-    <section class="container mt-4">
-      <div class="row container-fluid justify-content-center">
-        <div class="col-12 col-md-6 container flex-column">
-          <div class="product_img">
-            <div class="product-detail-badge">
-              <img src="./assets/discount_badge_icon.png" alt="" />
-              <span>30% OFF</span>
-            </div>
-            <img
-              src="./assets/vegetables/tomato-big.jpg"
-              alt=""
-              class="product-big-img"
-            />
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="contaier-fluid product-details-col flex-column">
-            <h5 class="">Tomato Premium - 500gm</h5>
-            <div class="product-price">
-              <span>MRP : </span>
-              <span style="text-decoration: line-through">₹505</span>
-            </div>
-            <div class="product-quantity">
-              <div class="quantity-btn">
-                <img src="./assets/oval_tick.png" alt="" />
-                <div>BUY 1 35/kg</div>
-              </div>
-            </div>
-            <div class="detais-buttons-container container-fluid">
-              <button class="btn">Add to Bag</button>
-              <button class="btn buy-btn">Buy Now</button>
-            </div>
-            <div class="discount-message">
-              Buy together with friends, neighbours and unlock special
-              discounts!
-            </div>
-            <div class="paycard-view">
-              <div class="dealPrice-view">
-                <p>Deal Price</p>
-                <p>₹352</p>
-              </div>
-              <div class="youPay-view">
-                <h4>You Pay</h4>
-                <h4>₹352</h4>
-              </div>
-              <hr />
-              <p class="delivery-message">
-                Free Delivery & Cash on Delivery Available
-              </p>
-            </div>
-          </div>
+    <!-- Cart Section -->
+    <section class="container-fluid cart-section">
+      <div class="message-container">
+        <img src="./assets/delivery-guy-image.png" alt="" />
+        <div class="message-content">
+          <span>Order more & Get Free shipping</span>
+          <p>
+            Shop for Rs 100 worth of Items till 10PM today and get Free
+            delivery!
+          </p>
         </div>
       </div>
-      <div class="row container">
-        <div class="col-12 col-md-6">
-          <div class="container-fluid mt-4" style="padding-left: 0">
-            <h4>Description</h4>
-            <p>
-              Grab this deal of Tomato Premium - 500 gm , buy this product
-              online today from DealShare, and share this deal with your friends
-              and family through WhatsApp.
-            </p>
-            <p>
-              Disclaimer: All efforts have been put to make the displayed
-              information as accurate as possible. However, actual product
-              packaging and materials may contain more / less / different
-              information. It is recommended to check the Manufacturing date,
-              Expiry date and MRP at the time of delivery of the product.
-            </p>
-            <h4 class="mt-2">Key Features</h4>
-            <ul>
-              <li>Best Price</li>
-              <li>Free Delivery</li>
-            </ul>
+      <div class="cart-title">
+        <h2>My Bag</h2>
+        <h2 class="bag-qty">(1 Items)</h2>
+      </div>
+      <div class="cart-container container-fluid">
+        <div class="row container-fluid">
+          <div class="col-12 col-lg-8">
+            <div class="cartDeal-container container">
+              <table>
+                <thead class="table-header">
+                  <tr>
+                    <td>Items</td>
+                    <td>Quantity</td>
+                    <td>Price/pc</td>
+                    <td>Discount</td>
+                    <td>You Pay</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    style="border-bottom: 0.5px solid rgb(230, 230, 230)"
+                  >
+                  <td class="product-details">
+                      <img src="./assets/vegetables/tomato.jpg" alt="tomato">
+                      <div class="product-content">
+                         <h4>
+                            Fortune Kachi Ghani Mustard Oil - 5 ltr
+                         </h4>
+                         <div class="remove-button">
+                             <button class="btn btn-outline-danger"> X Remove</button>
+                         </div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="price-container container-fluid">
+                          <div class="price-button">
+
+                              <img src="./assets/oval_tick.png" alt="">
+                              <div class="price-text-style">
+                                  Buy 1 at ₹985/pc
+                                </div>
+                            </div>
+                      </div>
+                  </td>
+                  <td class="price-per-piece">
+                    960
+                  </td>
+                  <td class="discount-badge">
+                      <img src="./assets/rect_badge.png" alt="">
+                      <span>18% off</span>
+                  </td>
+                  <td class="price-per-piece">
+                    960
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="right-column container-fluid">
+                <div class="order-summary-card">
+                    <h4>Order Summary</h4>
+                    <div class="price-details">
+                        <div class="row-style">
+                            <div class="title-view">
+                                <img src="./assets/mrp_icon.png" alt="">
+                                <span>MRP</span>
+                            </div>
+                            <span>₹1194</span>
+                        </div>
+                        <div class="row-style">
+                            <div class="title-view">
+                                <img src="./assets/mrp_icon.png" alt="">
+                                <span>Product Discount</span>
+                            </div>
+                            <span style="color: rgb(90, 163, 19);">₹209</span>
+                        </div>
+                        <div class="row-style">
+                            <div class="title-view">
+                                <img src="./assets/mrp_icon.png" alt="">
+                                <span>My Earnings Discount</span>
+                            </div>
+                            <span style="color:rgb(90, 163, 19);">₹25</span>
+                        </div>
+                    </div>
+                    <div class="youPay-row">
+                        <h4>Total Amount to Pay</h4>
+                        <h4>₹960</h4>
+                    </div>
+                
+                </div>
+                    <div class="d-grid gap-2 cart-buttons">
+                        <button class="btn btn-success product-btn1" type="button">
+                          Buy Now
+                        </button>
+                        <button class="btn btn-outline-success  product-btn2" type="button">
+                          Add to Bag
+                        </button>
+                      </div>
+            </div>
           </div>
         </div>
       </div>
