@@ -260,7 +260,7 @@ body {
 .drawer-body {
   padding: 0;
 }
-.drawer-body-div1 {
+.drawer-body-div {
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -271,11 +271,15 @@ body {
   padding: 10px 80px 10px 30px;
   margin-top: 10px;
 }
-.drawer-body-div1 img {
+.drawer-body-div a{
+  text-decoration: none;
+  color: #000;
+}
+.drawer-body-div img {
   width: 30px;
   height: 30px;
 }
-.drawer-body-div1 span {
+.drawer-body-div span {
   margin-left: 20px;
 }
 /* Login MOdal */

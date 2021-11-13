@@ -73,7 +73,7 @@
     height: 70px;
     width: 100vw;
   }
-  .category-slide{
+  .category-slide {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -113,13 +113,13 @@
   .carousel-section {
     height: 10rem;
   }
-  .login-form{
-    width: 250px; 
+  .login-form {
+    width: 250px;
   }
 }
 
 /* Product Details Page */
-@media (min-width:768px) and (max-width:992px)  {
+@media (min-width: 768px) and (max-width: 992px) {
   .product-detail-badge img {
     width: 70px;
     height: 60px;
@@ -128,36 +128,36 @@
     width: 50px;
     font-size: 17px;
   }
-  .product-big-img{
+  .product-big-img {
     height: 420px;
   }
-  .product-details-col h5{
+  .product-details-col h5 {
     font-size: 20px;
   }
   .product-price {
     margin-top: 20px;
     font-size: 19px;
   }
-  .product-price:nth-child(1){
+  .product-price:nth-child(1) {
     margin-top: 20px;
   }
-  .product-quantity{
+  .product-quantity {
     margin-top: 15px;
   }
-  .detais-buttons-container button{
+  .detais-buttons-container button {
     height: 60px;
     font-size: 15px;
   }
-  .discount-message{
+  .discount-message {
     font-size: 15px;
   }
-  .paycard-view{
+  .paycard-view {
     padding: 15px;
   }
-  .dealPrice-view p{
+  .dealPrice-view p {
     font-size: 15px;
   }
-  .youPay-view{
+  .youPay-view {
     margin-top: 3px;
   }
   .youPay-view h4 {
@@ -167,13 +167,13 @@
     margin-top: 7px;
   }
 }
-@media screen and (max-width:768px) {
-  .product-details-col{
+@media screen and (max-width: 768px) {
+  .product-details-col {
     margin-top: 2rem;
   }
 }
 
-@media screen and (max-width:464px) {
+@media screen and (max-width: 464px) {
   .product-detail-badge img {
     width: 60px;
     height: 50px;
@@ -182,21 +182,87 @@
     width: 40px;
     font-size: 15px;
   }
-  .product-details-col h5{
+  .product-details-col h5 {
     font-size: 18px;
   }
   .product-price {
     margin-top: 15px;
     font-size: 19px;
   }
-  .detais-buttons-container button{
+  .detais-buttons-container button {
     height: 60px;
     font-size: 14px;
   }
 }
-@media screen and (max-width:392px) {
-  .detais-buttons-container button{
+@media screen and (max-width: 392px) {
+  .detais-buttons-container button {
     height: 60px;
     font-size: 12px;
+  }
+}
+
+/* My Orders */
+@media screen and (max-width: 768px) {
+  .myOrder-list-container {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .orders-section {
+    margin-top: 1rem;
+  }
+  .screen-name-view h4 {
+    font-size: 20px;
+  }
+  .pending-orders-view {
+    padding: 8px 40px;
+    margin-top: 8px;
+  }
+  .pending-orders-view h4 {
+    font-size: 15px;
+  }
+  .order-item-view {
+    margin-top: 16px;
+    padding: 10px 20px;
+  }
+  .bag-image-view img {
+    width: 45px;
+    height: 55px;
+  }
+  .count-view {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 28px;
+  }
+  .count-text span {
+    font-size: 12px;
+  }
+  .content-view {
+    margin-left: 20px;
+  }
+  .content-sub-view {
+    margin-bottom: 5px;
+  }
+  .content-sub-view h5 {
+    font-size: 14px;
+  }
+  .bottom-view {
+    margin-top: 0.2rem;
+  }
+  .bottom-view p {
+    font-size: 14px;
+  }
+  .order-image-view {
+    margin-top: -8px;
+  }
+  .image-view img {
+    height: 40px;
+    width: 40px;
+  }
+  .view-details-btn {
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
   }
 }
