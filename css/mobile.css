@@ -266,3 +266,62 @@
     font-size: 15px;
   }
 }
+
+/* Checkout Page */
+@media screen and (max-width: 592px) {
+  .message-container img {
+    width: 50px;
+    height: 40px;
+  }
+  .message-content {
+    margin-left: 20px;
+  }
+  .message-content span {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .message-content p {
+    font-size: 13px;
+  }
+  .checkout-container{
+    padding: 0;
+  }
+  .info-card{
+    padding: 20px 10px;
+  }
+  .checkout-form label {
+    font-size: 14px;
+    color: grey;
+  }
+  .address-pincode-text {
+    font-size: 16px;
+  }
+  .edit-pin-button {
+    font-size: 12px;
+  }
+  .save-address-btn {
+    font-size: 14px;
+  }
+  .cancel-btn {
+    font-size: 14px;
+  }
+  .payment-card{
+    padding: 20px 10px;
+  }
+  .payment-button-text {
+    margin-left: 10px;
+
+  }
+  .payment-method-button img {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+  }
+  .payment-method-button {
+    margin-left: 0px;
+    padding: 17px 10px;
+  }
+  .payments-confirm-button button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar_">
+      <div class="container-fluid">
+        <div class="upper-nav">
+          <a
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBackdrop"
+            aria-controls="offcanvasWithBackdrop"
+            ><img
+              src="./assets/list.svg"
+              alt="menu-icon"
+              class="menu-icon me-5"
+          /></a>
+          <a class="navbar-brand company_logo" href="#">
+            <img src="./assets/logo1" alt="logo" />
+          </a>
+          <span class="location-upper">
+            <img src="./assets/location.svg" alt="location logo" />
+            <div class="location-upper-text">
+              <div class="location-upper-text-upper">
+                <span>Delivery to</span>
+                <img src="./assets/down-arrow.svg" alt="Down arrow" />
+              </div>
+              <div class="location-upper-text-lower">
+                <span>Jaipur 302017</span>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="nav-content" id="navbarSupportedContent">
+          <form class="d-flex">
+            <div class="input-group search_ me-4">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for Products"
+                aria-label="Search"
+              />
+              <span class="input-group-text input_span">
+                <button class="btn">
+                  <img src="./assets/search.svg" alt="search icon" />
+                </button>
+              </span>
+            </div>
+          </form>
+          <div class="animation_ ms-3 me-4">
+            <span class="animation_span">We are hiring</span>
+          </div>
+          <div class="location me-4">
+            <img src="./assets/location.svg" alt="location logo" />
+            <div class="location-text">
+              <div class="location-text-upper">
+                <span>Delivery to</span>
+                <img src="./assets/down-arrow.svg" alt="Down arrow" />
+              </div>
+              <div class="location-text-lower">
+                <span>110031</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="login"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <img src="./assets/person.svg" alt="Person" />
+            <span>Login</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Drawer -->
+    <div
+      class="offcanvas offcanvas-start drawer"
+      tabindex="-1"
+      id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel"
+    >
+      <div class="offcanvas-header drawer-header">
+        <button
+          type="button"
+          class="btn-close text-reset close-icon"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="drawer-header-text">
+          <img src="./assets/person-circle.svg" alt="" />
+          <h4>Hello, Login</h4>
+        </div>
+      </div>
+      <div class="offcanvas-body drawer-body">
+        <div class="drawer-body-div">
+          <a href="./my-orders.html">
+            <img src="./assets/ordersTab.png" alt="" />
+            <span>My Orders</span>
+          </a>
+        </div>
+        <div class="drawer-body-div">
+          <a href="#">
+            <img src="./assets/tnc_icon.png" alt="" />
+            <span>Terms and Conditions</span>
+          </a>
+        </div>
+
+        <div class="drawer-body-div">
+          <a href="./my-orders.html">
+            <img src="./assets/logout_icon.png" alt="" />
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Checkout Section -->
+    <section class="container-fluid checkout-section">
+      <div class="message-container">
+        <img src="./assets/delivery-guy-image.png" alt="" />
+        <div class="message-content">
+          <span>Order more & Get Free shipping</span>
+          <p>
+            Shop for Rs 100 worth of Items till 10PM today and get Free
+            delivery!
+          </p>
+        </div>
+      </div>
+      <div class="checkout-container">
+        <div class="row container-fluid justify-content-center">
+          <div class="col-12 col-lg-8  ">
+            <div class="left-column container-fluid">
+              <div class="info-card container-fluid">
+                <div class="login-view">
+                  <h4>Login</h4>
+                  <img src="./assets/oval_tick.png" alt="" />
+                </div>
+                <div class="login-details">
+                  <span>Abhinav</span>
+                  <span>+91 9876573260</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <h4>Delivery Address</h4>
+                <div class="mandatory-details">Mandatory Fields *</div>
+                <form class="checkout-form">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="Name"
+                        />
+                        <label for="floatingInput">Full Name *</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="Name"
+                        />
+                        <label for="floatingInput"
+                          >Full Address
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="address-pincode">
+                    <div class="address-pincode-text">
+                      Jaipur, Rajasthan -302001
+                    </div>
+                    <button class="btn btn-outline-secondary edit-pin-button">
+                      Edit PIN-Code
+                    </button>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-6">
+                      <div class="d-grid gap-2">
+                        <button class="btn save-address-btn" type="button">
+                          Save Address
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-6 container justify-content-center">
+                      <button class="btn btn-outline-success btn-lg cancel-btn">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 ">
+            <div class="right-column">
+              <div class="order-summary-card">
+                <h4>Order Summary</h4>
+                <div class="price-details">
+                  <div class="row-style">
+                    <div class="title-view">
+                      <img src="./assets/mrp_icon.png" alt="" />
+                      <span>MRP</span>
+                    </div>
+                    <span>₹1194</span>
+                  </div>
+                  <div class="row-style">
+                    <div class="title-view">
+                      <img src="./assets/discount_icon.png" alt="" />
+                      <span>Product Discount</span>
+                    </div>
+                    <span style="color: rgb(90, 163, 19)">-₹209</span>
+                  </div>
+                  <div class="row-style">
+                    <div class="title-view">
+                      <img src="./assets/cart_cashback_icon.png" alt="" />
+                      <span>My Earnings Discount</span>
+                    </div>
+                    <span style="color: rgb(90, 163, 19)">-₹25</span>
+                  </div>
+                  <div class="row-style">
+                    <div class="title-view">
+                      <img src="./assets/delivery_charge.png" alt="" />
+                      <span>Delivery Charge</span>
+                    </div>
+                    <span style="color: rgb(90, 163, 19)">+₹25</span>
+                  </div>
+                </div>
+                <div class="youPay-row">
+                  <h4>Total Amount to Pay</h4>
+                  <h4>₹960</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-8 payment-card">
+              <h4>Choose Payment Method</h4>
+              <div class="payment-method-container row container-fluid">
+                <div class="col-12 col-md-5 payment-methods">
+                  <div
+                    class="payment-method-button payment-method-button-selected"
+                  >
+                    <img src="./assets/cod.png" alt="" />
+                    <div class="payment-button-text">Cash on Delivery</div>
+                  </div>
+                  <div class="payment-method-button">
+                    <img src="./assets/cod.png" alt="" />
+                    <div class="payment-button-text">Paytm</div>
+                  </div>
+                  <div class="payment-method-button">
+                    <img src="./assets/cod.png" alt="" />
+                    <div class="payment-button-text">Card</div>
+                  </div>
+                  <div class="payment-method-button">
+                    <img src="./assets/cod.png" alt="" />
+                    <div class="payment-button-text">UPI</div>
+                  </div>
+                  <div class="payment-method-button">
+                    <img src="./assets/cod.png" alt="" />
+                    <div class="payment-button-text">Other</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 payment-methods-view justify-content-center">
+                  <div class="payments-confirm-button justify-content-center mb-4">
+                    <button class="btn btn-lg">Confirm Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

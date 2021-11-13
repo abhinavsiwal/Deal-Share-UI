@@ -8,6 +8,7 @@
   -webkit-box-align: center;
   align-items: center;
   background: rgb(255, 241, 199);
+  padding-left: 10px;
 }
 .message-container img {
   width: 72px;
